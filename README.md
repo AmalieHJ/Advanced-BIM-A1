@@ -11,3 +11,4 @@ LCA is chosen for the project use case, as it is a field in development and high
 **Stakeholder of the use case**
 
 The use case recipients are engineers. However, overlap exists to both architects and the contractor.
+ff
