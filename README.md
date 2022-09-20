@@ -9,8 +9,8 @@ It is currently time consuming to perform an LCA model as well as gathering the 
 In order to make sure that the law regulations are met when the building is complete, iterative and continuously CO2 check points are beneficial. But due to the time spent on making an LCA it is not realistic to make iterative LCA checks for the time being. 
 With our chosen use case within LCA, the goal is to make a script that links CO2 emissions from building materials to elements within an IFC model, thus enabling quick comparison of LCA climate impact for different choice of material within the model.  
 
-The use case only relate to choice of materials within the LCA. Thus it does not deal with the energy frame which is usually part of the LCA. 
-The IFC model does not contain information on source of energy for the building. Additionally, it is assumed that the energy supply varies only little as a cause of using different building skin materials, why the change in contribution is insignificant for the overall LCA results. 
+The use case only relate to choice of materials within the LCA. Thus it does not take the energy frame into account which is normally part of the LCA. 
+The IFC model does not contain information on source of energy for the building. Additionally, it is assumed that the energy supply varies only little as a cause of using different building skin materials, why the change in contribution is insignificant for the overall LCA results. It is assumed that the IFC model satisfies the requirements of the Danish building regulations (BR18). 
 
 **Stakeholders of the use case**
 
@@ -23,15 +23,38 @@ Furtermore, the script might also be introduced to the architects to guide the i
 
 LCA was the non BIM disciplinary expertise used to solve the use case. 
 
-**IFC concepts**
+**IFC concepts in the script**
 
--Entities:  
--Properties: 
+All physical entities and properties that affect CO2 emissions would be used in the script. That is:
+- *Area*: for the analysis output unit of *kg CO2-eq per m^2 per year*.   
+- *Element dimensions*: to calculate the volume of the elements
+- *Element materials*: to find the CO2-emissions of the elements
 
+**Disciplinary analysis required**
 
+Obviously a Life Cycle Analysis is required for the chosen use case. 
 
+**Building elements**
 
+All physical elements in the building model are of interest in the use case. 
 
+**Dependency on other use cases**
+The use case is dependent on several other use cases such as structural, acoustics, fire, daylight, indoor climate and architecture as these cases impact choice of materials and thus evidently influence the LCA results.
 
+The structural analysis reveal dimensions of the load-bearing structures thus the material quantities. As different materials hold different carrying capacities, the choice of structural material may have a huge influence on material quantities used. 
 
+Both acoustics and fire may introduce elements such as acoustic panels and fire retardants respectively to be included in the LCA.  
+Likewise, indoor climate provide the systems such as ventilation channels that should also be included in the LCA.
 
+Daylight decides on number and type of openings that influence the energy frame. In spite of neglecting the energy aspect in our use case, the choice and number of windows still affect the LCA on materials. 
+
+Finally, the architecture establish the aesthetic arguments on choice of material.   
+
+**Input data for use case**
+
+Area (m^2) and Volume (m^3).
+
+**Other use cases dependent on our use case**
+The use cases waiting for our use case to complete are:
+- *Costs*: The more sustainable choice of material is not neccessarily the most cost effective one. 
+- *Code validation*
