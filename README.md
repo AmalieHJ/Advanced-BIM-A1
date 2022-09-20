@@ -55,6 +55,7 @@ Finally, the architecture establish the aesthetic arguments on choice of materia
 Area (m^2) and Volume (m^3).
 
 **Other use cases dependent on our use case**
+
 The use cases waiting for our use case to complete are:
 - *Costs*: The more sustainable choice of material is not neccessarily the most cost effective one. 
 - *Code validation*
