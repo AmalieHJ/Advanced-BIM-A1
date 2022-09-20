@@ -3,7 +3,7 @@
 
 **Chosen use case**
 
-Life Cycle Assessment (LCA) is chosen as the project use case, as it is a highly prioritised field in the building industry with yet further development potential. 
+Finding a model's material CO2 emission contribution in a Life Cycle Assessment (LCA) is chosen as the project use case, as minimising CO2 emissions is a highly prioritised field in the building industry with yet further development potential. 
 Today, LCA is to be found in all aspects of the built environment. This is mainly due to the coming law regulation of CO2 emissions on buildings starting in 2023. 
 It is currently time consuming to perform an LCA model as well as gathering the right LCI (Life Cycle Inventory) from the building model. 
 In order to make sure that the law regulations are met when the building is complete, iterative and continuously CO2 check points are beneficial. But due to the time spent on making an LCA it is not realistic to make iterative LCA checks for the time being. 
@@ -11,7 +11,7 @@ With our chosen use case within LCA, the goal is to make a script that links CO2
 
 The use case only relate to choice of materials within the LCA. Thus it does not take the energy frame into account which is normally part of the LCA. 
 The IFC model does not contain information on source of energy for the building. Additionally, it is assumed that the energy supply varies only little as a cause of using different building skin materials, why the change in contribution is insignificant for the overall LCA results. It is assumed that the IFC model satisfies the requirements of the Danish building regulations (BR18). 
-
+ 
 **Stakeholders of the use case**
 
 The use case recipients are primarily consulting engineers but other stakeholders such as architects or the contractor could also find it useful. 
@@ -59,3 +59,6 @@ Area (m^2) and Volume (m^3).
 The use cases waiting for our use case to complete are:
 - *Costs*: The more sustainable choice of material is not neccessarily the most cost effective one. 
 - *Code validation*
+
+NOTE til vedligehold: kan man flette materialerne levetider ind ift potentiel udskiftning i bygningens levetid?? (hvis et materiale skal udskiftes én gang i bygningens levetid da vil CO2 udledningen tælle dobbelt!).
+
