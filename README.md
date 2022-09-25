@@ -24,14 +24,14 @@ LCA was the non BIM disciplinary expertise used to solve the use case.
 
 **IFC concepts in the script**
 
-All physical entities and properties that affect CO2 emissions would be used in the script. That is:
+All physical entities and property sets that affect CO2 emissions would be used in the script. That is:
 - *Area*: for the analysis output unit of *kg CO2-eq per m^2 per year*.   
 - *Element dimensions*: to calculate the volume of the elements
 - *Element materials*: to find the CO2-emissions of the elements
 
 **Disciplinary analysis required**
 
-Obviously a Life Cycle Analysis is required for the chosen use case. 
+Life Cycle Analysis is required for the chosen use case. 
 
 **Building elements**
 
@@ -41,18 +41,18 @@ All physical elements in the building model are of interest in the use case.
 
 The use case is dependent on several other use cases such as structural, acoustics, fire, daylight, indoor climate and architecture as these cases impact choice of materials and thus evidently influence the LCA results.
 
-The structural analysis reveal dimensions of the load-bearing structures thus the material quantities. As different materials hold different carrying capacities, the choice of structural material may have a huge influence on material quantities used. 
+The structural analysis reveal dimensions of the load-bearing structures thus the material quantities. As different materials hold different carrying capacities, the choice of structural material may have a huge influence on CO2 emmissions. 
 
 Both acoustics and fire may introduce elements such as acoustic panels and fire retardants respectively to be included in the LCA.  
 Likewise, indoor climate provide the systems such as ventilation channels that should also be included in the LCA.
 
-Daylight decides on number and type of openings that influence the energy frame. In spite of neglecting the energy aspect in our use case, the choice and number of windows still affect the LCA on materials. 
+Daylight decides on number and type of openings that influence the energy frame. In spite of neglecting the energy aspect in our use case, the choice and number of windows still affect the LCA. 
 
 Finally, the architecture establish the aesthetic arguments on choice of material.   
 
 **Input data for use case**
 
-Area (m^2) and Volume (m^3).
+Area (m2) and Volume (m3).
 
 **Other use cases dependent on our use case**
 
@@ -60,5 +60,4 @@ The use cases waiting for our use case to complete are:
 - *Costs*: The more sustainable choice of material is not neccessarily the most cost effective one. 
 - *Code validation*
 
-NOTE til vedligehold: kan man flette materialerne levetider ind ift potentiel udskiftning i bygningens levetid?? (hvis et materiale skal udskiftes én gang i bygningens levetid da vil CO2 udledningen tælle dobbelt!).
 
