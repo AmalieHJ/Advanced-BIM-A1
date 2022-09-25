@@ -39,6 +39,7 @@ Obviously a Life Cycle Analysis is required for the chosen use case.
 All physical elements in the building model are of interest in the use case. 
 
 **Dependency on other use cases**
+
 The use case is dependent on several other use cases such as structural, acoustics, fire, daylight, indoor climate and architecture as these cases impact choice of materials and thus evidently influence the LCA results.
 
 The structural analysis reveal dimensions of the load-bearing structures thus the material quantities. As different materials hold different carrying capacities, the choice of structural material may have a huge influence on material quantities used. 
